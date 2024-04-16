@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>クリックイベントと切り替え</title>
+  <link rel="stylesheet" type="text/css" href="base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+$(function(){
+    $('#button1').hover(function(){
+      $(this).css('background','red');
+    },function(){
+      $(this).css('background','#fdd');
+    });
+    $('#button2').hover(function(){
+      $(this).css('background','red');
+    },function(){
+      $(this).css('background','#fdd');
+    });
+    $('#button3').hover(function(){
+      $(this).css('background','red');
+    },function(){
+      $(this).css('background','#fdd');
+    });
+  });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="button" id="button1">
+      <p>button1</p>
+    </div><!-- button1 -->
+    <div class="button" id="button2">
+      <p>button2</p>
+    </div><!-- button2 -->
+    <div class="button" id="button3">
+      <p>button3</p>
+    </div><!-- button3 -->
+  </div><!-- wrapper -->
+</body>
+</html>
